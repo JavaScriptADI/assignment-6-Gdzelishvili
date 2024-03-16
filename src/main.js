@@ -23,12 +23,12 @@ function getCities() {
 const citiesArray = getCities();
 
 const tbody = document.querySelector('#cities-table tbody');
-console.log();
+console.log(citiesArray);
 
 citiesArray.forEach(city1 => {
     let row = document.createElement("tr");
 
-    row.innerHTML = (`<td>${city1.city}</td>
+    row.innerHTML = (`<td>${city1.name}</td>
     <td>${city1.population}</td>`);
 
     tbody.appendChild(row);
